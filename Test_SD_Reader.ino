@@ -80,7 +80,7 @@ void loop()
   }
   if(val == HIGH && isOff == false)
   {
-    myDFPlayer.play(random(1,11));
+    myDFPlayer.play(random(1,12));
     delay(32000);
     myDFPlayer.stop();
   }
