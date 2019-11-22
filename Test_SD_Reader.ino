@@ -36,10 +36,12 @@ bool isOff = true;
 int val = 0;
 int buttonVal = 0;
 
+
 void setup()
 {
   pinMode(offButton, INPUT);
   pinMode(pirSensor, INPUT);
+  randomSeed(analogRead(0));
   
   mySoftwareSerial.begin(9600);
   Serial.begin(115200);
@@ -78,7 +80,7 @@ void loop()
   }
   if(val == HIGH && isOff == false)
   {
-    myDFPlayer.play(random(1,10));
+    myDFPlayer.play(random(1,11));
     delay(32000);
     myDFPlayer.stop();
   }
