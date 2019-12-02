@@ -60,7 +60,7 @@ void setup()
 
 
 
-  myDFPlayer.volume(15);  //Set volume value. From 0 to 30
+  myDFPlayer.volume(20);  //Set volume value. From 0 to 30
   //myDFPlayer.play(1); //This is for debugging
 }
 
@@ -81,7 +81,7 @@ void loop()
   }
   if(val == HIGH && isOff == false)
   {
-    myDFPlayer.play(random(1,33));
+    myDFPlayer.play(random(1,32));
     delay(32000);
     myDFPlayer.stop();
   }
