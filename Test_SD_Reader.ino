@@ -60,7 +60,7 @@ void setup()
 
 
 
-  myDFPlayer.volume(15);  //Set volume value. From 0 to 30
+  myDFPlayer.volume(18);  //Set volume value. From 0 to 30
   //myDFPlayer.play(1); //This is for debugging
 }
 
