@@ -41,7 +41,7 @@ void setup()
 {
   pinMode(offButton, INPUT);
   pinMode(pirSensor, INPUT);
-  randomSeed(analogRead(0));
+  randomSeed(analogRead(6));
   
   mySoftwareSerial.begin(9600);
   Serial.begin(115200);
@@ -81,7 +81,7 @@ void loop()
   }
   if(val == HIGH && isOff == false)
   {
-    myDFPlayer.play(random(1,32));
+    myDFPlayer.play(random(1,31));
     delay(32000);
     myDFPlayer.stop();
   }
